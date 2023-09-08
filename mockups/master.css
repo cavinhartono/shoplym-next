@@ -1,15 +1,72 @@
 :root {
-  --black-500: #222;
+  /* Box Sixing */
+
+  /* Box Sixing */
+
+  /* Primary color */
+  --blue-50: #ebf3fe;
+  --blue-100: #d8e6fd;
+  --blue-200: #b1cefb;
+  --blue-300: #8ab5fa;
+  --blue-400: #639cf8;
+  --blue-500: #3b82f6;
+  --blue-600: #0b60ea;
+  --blue-700: #0848b0;
+  --blue-800: #053075;
+  --blue-900: #03183b;
+  --blue-950: #010c1d;
+  /* Primary color */
+
+  /* Text and body */
+  --black-50: #e8e8e8;
+  --black-100: #d4d4d4;
+  --black-200: #a6a6a6;
+  --black-300: #7a7a7a;
+  --black-400: #4f4f4f;
+  --black-500: #222222;
+  --black-600: #1c1c1c;
+  --black-700: #141414;
+  --black-800: #0d0d0d;
+  --black-900: #080808;
+  --black-950: #030303;
+  --white-50: #ffffff;
+  --white-100: #fcfcfc;
+  --white-200: #fafafa;
+  --white-300: #fafafa;
+  --white-400: #f7f7f7;
   --white-500: #f5f5f5;
+  --white-600: #c4c4c4;
+  --white-700: #949494;
+  --white-800: #616161;
+  --white-900: #303030;
+  --white-950: #1a1a1a;
+  /* Text and body */
+}
+
+p {
+  font-family: "Public Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-family: "Poppins", sans-serif;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Public Sans", sans-serif;
 }
 
 body {
   background: var(--white-500);
+  color: var(--black-500);
 }
