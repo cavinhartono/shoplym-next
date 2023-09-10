@@ -1,6 +1,9 @@
 :root {
   /* Box Sixing */
   --full: 100%;
+  --rg: 1rem; /* 16px */
+  --md: 1.5rem; /* 24px */
+  --lg: 2rem; /* 32px */
   /* Box Sixing */
 
   /* Primary color */
@@ -100,24 +103,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 200px;
+  padding: var(--md) calc(var(--lg) * 6);
 }
 
 .header .special_offers {
+  padding: var(--rg);
   width: var(--full);
   background: var(--blue-300);
   color: var(--white-500);
-  padding: 1rem;
 }
 
 .header .special_offers marquee {
-  margin: 0 200px;
+  margin: 0 calc(var(--lg) * 6);
 }
 
 :is(.header ul, .toolbar .list .link) {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: var(--md);
 }
 
 .header .input {
@@ -127,9 +130,9 @@ body {
 }
 
 .header .input .icon {
-  font-size: 1.5rem;
+  font-size: var(--md);
   border-left: 1px solid var(--black-300);
-  padding: 12px;
+  padding: calc(var(--rg) - 4);
   display: flex;
   align-items: center;
 }
@@ -140,7 +143,7 @@ body {
 }
 
 .toolbar .link .icon {
-  font-size: 1.5rem;
+  font-size: var(--md);
   color: var(--black-500);
 }
 
@@ -157,7 +160,7 @@ body {
 }
 
 .content {
-  padding: 1.5rem 3rem;
+  padding: var(--md) calc(var(--lg) + var(--rg));
 }
 
 .shadow {
