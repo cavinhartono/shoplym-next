@@ -94,15 +94,58 @@ body {
   top: 0;
   left: 0;
   width: var(--full);
-  padding: 24px 200px;
+}
+
+.header .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 24px 200px;
 }
 
-.header ul {
+.header .special_offers {
+  width: var(--full);
+  background: var(--blue-300);
+  color: var(--white-500);
+  padding: 1rem;
+}
+
+.header .special_offers marquee {
+  margin: 0 200px;
+}
+
+:is(.header ul, .toolbar .list .link) {
   display: flex;
+  align-items: center;
   gap: 24px;
+}
+
+.header .input {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--black-300);
+}
+
+.header .input .icon {
+  font-size: 1.5rem;
+  border-left: 1px solid var(--black-300);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.header .input input {
+  outline: none;
+  border: none;
+}
+
+.toolbar .link .icon {
+  font-size: 1.5rem;
+  color: var(--black-500);
+}
+
+.toolbar .link .primary {
+  padding: 8px;
 }
 
 .nav .list .link {
