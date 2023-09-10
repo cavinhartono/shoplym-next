@@ -97,6 +97,7 @@ body {
   top: 0;
   left: 0;
   width: var(--full);
+  z-index: 5;
 }
 
 .header .banner {
@@ -104,6 +105,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: var(--md) calc(var(--lg) * 6);
+  background: var(--white-50);
 }
 
 .header .special_offers {
@@ -160,7 +162,8 @@ body {
 }
 
 .content {
-  padding: var(--md) calc(var(--lg) + var(--rg));
+  position: relative;
+  margin-top: 100px;
 }
 
 .shadow {
@@ -180,7 +183,7 @@ body {
   color: var(--white-500);
 }
 
-.primary:hover {
+.primary {
   border: 1px solid var(--blue-500);
   background: transparent;
   color: var(--blue-500);
